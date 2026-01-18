@@ -29,7 +29,7 @@ server.use(middlewares);
 server.use(router);
 
 // 4. 監聽 Port：這一步最重要！一定要用 0.0.0.0 [cite: 61-62]
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 server.listen(port, '0.0.0.0', () => {
   console.log(`JSON Server is running on port ${port}`);
 });
