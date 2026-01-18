@@ -1,0 +1,684 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "芫荽殺手",
+      "email": "nocilantro@example.com",
+      "password": "123",
+      "avatar": "/assets/user1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "素食小可愛",
+      "email": "veggie@example.com",
+      "password": "123",
+      "avatar": "/assets/user2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "義式披薩捍衛者",
+      "email": "nopineapple@example.com",
+      "password": "123",
+      "avatar": "/assets/user3.jpg"
+    }
+  ],
+  "collections": [
+    {
+      "id": 101,
+      "userId": 1,
+      "name": "我的最愛",
+      "type": "favorites",
+      "dishIds": [1, 5, 12, 22]
+    },
+    {
+      "id": 102,
+      "userId": 1,
+      "name": "絕對安全的拉麵店",
+      "type": "custom",
+      "dishIds": [3, 10, 11]
+    },
+    {
+      "id": 103,
+      "userId": 2,
+      "name": "週末早午餐",
+      "type": "favorites",
+      "dishIds": [6, 15, 29]
+    },
+    {
+      "id": 104,
+      "userId": 2,
+      "name": "純素無雷區",
+      "type": "custom",
+      "dishIds": [6, 18, 24, 33]
+    },
+    {
+      "id": 105,
+      "userId": 3,
+      "name": "沒有夏威夷披薩的店",
+      "type": "custom",
+      "dishIds": [25, 26]
+    },
+    {
+      "id": 106,
+      "userId": 3,
+      "name": "宵夜首選",
+      "type": "favorites",
+      "dishIds": [19, 20, 31]
+    },
+    {
+      "id": 107,
+      "userId": 1,
+      "name": "約會不尷尬清單",
+      "type": "custom",
+      "dishIds": [13, 14, 25]
+    }
+  ],
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "老張清燉牛肉麵",
+      "address": "台北市大安區永康街10號",
+      "image": "/assets/rest_beef.jpg"
+    },
+    {
+      "id": 2,
+      "name": "小林家茄汁蛋包飯",
+      "address": "台北市信義區松山路50號",
+      "image": "/assets/rest_omelet.jpg"
+    },
+    {
+      "id": 3,
+      "name": "一魂拉麵",
+      "address": "台北市中山區林森北路88號",
+      "image": "/assets/rest_ramen.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Luigi 義式廚房",
+      "address": "新北市板橋區縣民大道二段",
+      "image": "/assets/rest_pasta.jpg"
+    },
+    {
+      "id": 5,
+      "name": "BigBurger 美式漢堡",
+      "address": "台北市松山區民生東路",
+      "image": "/assets/rest_burger.jpg"
+    },
+    {
+      "id": 6,
+      "name": "首爾大媽韓式料理",
+      "address": "台中市西屯區台灣大道",
+      "image": "/assets/rest_korean.jpg"
+    },
+    {
+      "id": 7,
+      "name": "泰好吃 泰式咖哩",
+      "address": "高雄市左營區博愛二路",
+      "image": "/assets/rest_thai.jpg"
+    },
+    {
+      "id": 8,
+      "name": "阿嬤的手工水餃",
+      "address": "台北市中正區南陽街",
+      "image": "/assets/rest_dumpling.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Napoli 窯烤披薩",
+      "address": "新北市新店區北新路",
+      "image": "/assets/rest_pizza.jpg"
+    },
+    {
+      "id": 10,
+      "name": "快樂炸雞桶",
+      "address": "桃園市中壢區中正路",
+      "image": "/assets/rest_chicken.jpg"
+    },
+    {
+      "id": 11,
+      "name": "築地鮮魚壽司",
+      "address": "台北市內湖區瑞光路",
+      "image": "/assets/rest_sushi.jpg"
+    },
+    {
+      "id": 12,
+      "name": "巷口滷肉飯",
+      "address": "台南市中西區國華街",
+      "image": "/assets/rest_porkrice.jpg"
+    }
+  ],
+  "dishes": [
+    {
+      "id": 1,
+      "restaurantId": 1,
+      "name": "招牌清燉牛肉麵",
+      "price": 180,
+      "image": "/assets/dish_1.jpg",
+      "ingredients": ["牛肉", "香菜", "蔥"],
+      "status": "published",
+      "like_count": 124
+    },
+    {
+      "id": 2,
+      "restaurantId": 1,
+      "name": "紅燒半筋半肉麵",
+      "price": 220,
+      "image": "/assets/dish_2.jpg",
+      "ingredients": ["牛肉", "蔥", "辣", "酸菜"],
+      "status": "published",
+      "like_count": 98
+    },
+    {
+      "id": 3,
+      "restaurantId": 1,
+      "name": "無蔥牛肉清湯麵",
+      "price": 100,
+      "image": "/assets/dish_3.jpg",
+      "ingredients": ["牛肉"],
+      "status": "published",
+      "like_count": 50
+    },
+    {
+      "id": 4,
+      "restaurantId": 2,
+      "name": "茄汁蛋包飯",
+      "price": 120,
+      "image": "/assets/dish_4.jpg",
+      "ingredients": ["蛋", "洋蔥", "番茄醬"],
+      "status": "published",
+      "like_count": 88
+    },
+    {
+      "id": 5,
+      "restaurantId": 2,
+      "name": "日式炸豬排",
+      "price": 150,
+      "image": "/assets/dish_5.jpg",
+      "ingredients": ["豬肉", "麵粉"],
+      "status": "published",
+      "like_count": 110
+    },
+    {
+      "id": 6,
+      "restaurantId": 2,
+      "name": "蔬菜可樂餅",
+      "price": 60,
+      "image": "/assets/dish_6.jpg",
+      "ingredients": ["馬鈴薯", "紅蘿蔔", "玉米"],
+      "status": "published",
+      "like_count": 45
+    },
+    {
+      "id": 7,
+      "restaurantId": 3,
+      "name": "豚骨拉麵",
+      "price": 230,
+      "image": "/assets/dish_7.jpg",
+      "ingredients": ["豬肉", "蔥", "蒜", "木耳"],
+      "status": "published",
+      "like_count": 200
+    },
+    {
+      "id": 8,
+      "restaurantId": 3,
+      "name": "地獄麻辣拉麵",
+      "price": 250,
+      "image": "/assets/dish_8.jpg",
+      "ingredients": ["豬肉", "辣", "蒜", "蔥"],
+      "status": "published",
+      "like_count": 167
+    },
+    {
+      "id": 9,
+      "restaurantId": 3,
+      "name": "醬油拉麵(無蔥版)",
+      "price": 200,
+      "image": "/assets/dish_9.jpg",
+      "ingredients": ["豬肉", "筍乾"],
+      "status": "published",
+      "like_count": 89
+    },
+    {
+      "id": 10,
+      "restaurantId": 3,
+      "name": "日式唐揚雞",
+      "price": 120,
+      "image": "/assets/dish_10.jpg",
+      "ingredients": ["雞肉", "檸檬"],
+      "status": "published",
+      "like_count": 140
+    },
+    {
+      "id": 11,
+      "restaurantId": 3,
+      "name": "黃金泡菜",
+      "price": 50,
+      "image": "/assets/dish_11.jpg",
+      "ingredients": ["白菜", "蒜", "辣"],
+      "status": "published",
+      "like_count": 66
+    },
+    {
+      "id": 12,
+      "restaurantId": 4,
+      "name": "奶油培根義大利麵",
+      "price": 280,
+      "image": "/assets/dish_12.jpg",
+      "ingredients": ["豬肉", "乳製品", "洋蔥"],
+      "status": "published",
+      "like_count": 134
+    },
+    {
+      "id": 13,
+      "restaurantId": 4,
+      "name": "松子青醬蛤蜊麵",
+      "price": 300,
+      "image": "/assets/dish_13.jpg",
+      "ingredients": ["海鮮", "蒜", "堅果"],
+      "status": "published",
+      "like_count": 99
+    },
+    {
+      "id": 14,
+      "restaurantId": 4,
+      "name": "經典肉醬寬麵",
+      "price": 260,
+      "image": "/assets/dish_14.jpg",
+      "ingredients": ["牛肉", "番茄", "洋蔥"],
+      "status": "published",
+      "like_count": 112
+    },
+    {
+      "id": 15,
+      "restaurantId": 5,
+      "name": "熔岩花生牛肉堡",
+      "price": 250,
+      "image": "/assets/dish_15.jpg",
+      "ingredients": ["牛肉", "堅果", "乳製品", "生菜"],
+      "status": "published",
+      "like_count": 180
+    },
+    {
+      "id": 16,
+      "restaurantId": 5,
+      "name": "經典雙層起司堡",
+      "price": 220,
+      "image": "/assets/dish_16.jpg",
+      "ingredients": ["牛肉", "乳製品", "洋蔥", "酸黃瓜"],
+      "status": "published",
+      "like_count": 155
+    },
+    {
+      "id": 17,
+      "restaurantId": 5,
+      "name": "酥脆薯條",
+      "price": 80,
+      "image": "/assets/dish_17.jpg",
+      "ingredients": ["馬鈴薯", "鹽"],
+      "status": "published",
+      "like_count": 210
+    },
+    {
+      "id": 18,
+      "restaurantId": 6,
+      "name": "石鍋拌飯",
+      "price": 200,
+      "image": "/assets/dish_18.jpg",
+      "ingredients": ["牛肉", "蛋", "紅蘿蔔", "豆芽", "辣"],
+      "status": "published",
+      "like_count": 95
+    },
+    {
+      "id": 19,
+      "restaurantId": 6,
+      "name": "韓式炸雞(辣味)",
+      "price": 350,
+      "image": "/assets/dish_19.jpg",
+      "ingredients": ["雞肉", "辣", "蒜"],
+      "status": "published",
+      "like_count": 230
+    },
+    {
+      "id": 20,
+      "restaurantId": 6,
+      "name": "海鮮煎餅",
+      "price": 280,
+      "image": "/assets/dish_20.jpg",
+      "ingredients": ["海鮮", "蔥", "麵粉"],
+      "status": "published",
+      "like_count": 105
+    },
+    {
+      "id": 21,
+      "restaurantId": 7,
+      "name": "綠咖哩雞",
+      "price": 240,
+      "image": "/assets/dish_21.jpg",
+      "ingredients": ["雞肉", "辣", "椰奶", "九層塔"],
+      "status": "published",
+      "like_count": 115
+    },
+    {
+      "id": 22,
+      "restaurantId": 7,
+      "name": "月亮蝦餅",
+      "price": 300,
+      "image": "/assets/dish_22.jpg",
+      "ingredients": ["海鮮"],
+      "status": "published",
+      "like_count": 245
+    },
+    {
+      "id": 23,
+      "restaurantId": 7,
+      "name": "泰式酸辣湯",
+      "price": 280,
+      "image": "/assets/dish_23.jpg",
+      "ingredients": ["海鮮", "香菜", "辣", "番茄"],
+      "status": "published",
+      "like_count": 92
+    },
+    {
+      "id": 24,
+      "restaurantId": 8,
+      "name": "高麗菜水餃(10顆)",
+      "price": 70,
+      "image": "/assets/dish_24.jpg",
+      "ingredients": ["豬肉", "高麗菜", "薑"],
+      "status": "published",
+      "like_count": 160
+    },
+    {
+      "id": 25,
+      "restaurantId": 8,
+      "name": "韭菜水餃(10顆)",
+      "price": 70,
+      "image": "/assets/dish_25.jpg",
+      "ingredients": ["豬肉", "韭菜"],
+      "status": "published",
+      "like_count": 130
+    },
+    {
+      "id": 26,
+      "restaurantId": 8,
+      "name": "酸辣湯",
+      "price": 40,
+      "image": "/assets/dish_26.jpg",
+      "ingredients": ["木耳", "紅蘿蔔", "蛋", "香菜"],
+      "status": "published",
+      "like_count": 188
+    },
+    {
+      "id": 27,
+      "restaurantId": 9,
+      "name": "夏威夷披薩",
+      "price": 320,
+      "image": "/assets/dish_27.jpg",
+      "ingredients": ["鳳梨", "火腿", "乳製品"],
+      "status": "published",
+      "like_count": 55
+    },
+    {
+      "id": 28,
+      "restaurantId": 9,
+      "name": "瑪格麗特披薩",
+      "price": 280,
+      "image": "/assets/dish_28.jpg",
+      "ingredients": ["番茄", "乳製品", "羅勒"],
+      "status": "published",
+      "like_count": 190
+    },
+    {
+      "id": 29,
+      "restaurantId": 10,
+      "name": "勁辣雞翅",
+      "price": 99,
+      "image": "/assets/dish_29.jpg",
+      "ingredients": ["雞肉", "辣"],
+      "status": "published",
+      "like_count": 145
+    },
+    {
+      "id": 30,
+      "restaurantId": 10,
+      "name": "雞米花",
+      "price": 69,
+      "image": "/assets/dish_30.jpg",
+      "ingredients": ["雞肉", "九層塔"],
+      "status": "published",
+      "like_count": 178
+    },
+    {
+      "id": 31,
+      "restaurantId": 11,
+      "name": "鮭魚握壽司(2貫)",
+      "price": 80,
+      "image": "/assets/dish_31.jpg",
+      "ingredients": ["海鮮", "芥末"],
+      "status": "published",
+      "like_count": 220
+    },
+    {
+      "id": 32,
+      "restaurantId": 11,
+      "name": "豆皮壽司",
+      "price": 40,
+      "image": "/assets/dish_32.jpg",
+      "ingredients": ["豆皮"],
+      "status": "published",
+      "like_count": 110
+    },
+    {
+      "id": 33,
+      "restaurantId": 11,
+      "name": "味噌湯",
+      "price": 30,
+      "image": "/assets/dish_33.jpg",
+      "ingredients": ["豆腐", "蔥", "海帶"],
+      "status": "published",
+      "like_count": 165
+    },
+    {
+      "id": 34,
+      "restaurantId": 12,
+      "name": "招牌滷肉飯",
+      "price": 45,
+      "image": "/assets/dish_34.jpg",
+      "ingredients": ["豬肉", "蔥酥", "醬油"],
+      "status": "published",
+      "like_count": 300
+    },
+    {
+      "id": 35,
+      "restaurantId": 12,
+      "name": "燙青菜",
+      "price": 40,
+      "image": "/assets/dish_35.jpg",
+      "ingredients": ["青菜", "蒜"],
+      "status": "published",
+      "like_count": 120
+    },
+    {
+      "id": 36,
+      "restaurantId": 12,
+      "name": "貢丸湯",
+      "price": 35,
+      "image": "/assets/dish_36.jpg",
+      "ingredients": ["豬肉", "香菜", "芹菜"],
+      "status": "published",
+      "like_count": 130
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "userId": 1,
+      "dishId": 1,
+      "type": "report",
+      "foundMines": ["香菜", "蔥"],
+      "comment": "雖然菜單沒寫，但老闆灑了一堆香菜！",
+      "date": "2025-12-10",
+      "status": "approved"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "dishId": 4,
+      "type": "review",
+      "foundMines": [],
+      "comment": "確認過，這家的蛋包飯沒有放洋蔥，安全！",
+      "date": "2025-12-12",
+      "status": "approved"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "dishId": 27,
+      "type": "review",
+      "foundMines": ["鳳梨"],
+      "comment": "披薩加鳳梨是邪教！千萬別點！",
+      "date": "2025-12-15",
+      "status": "approved"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "dishId": 26,
+      "type": "report",
+      "foundMines": ["香菜"],
+      "comment": "酸辣湯最後會灑香菜，記得跟老闆說不要加。",
+      "date": "2025-12-16",
+      "status": "approved"
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "dishId": 13,
+      "type": "review",
+      "foundMines": [],
+      "comment": "青醬裡面有加蒜頭，純素者注意！",
+      "date": "2025-12-18",
+      "status": "approved"
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "dishId": 7,
+      "type": "review",
+      "foundMines": ["蔥"],
+      "comment": "蔥花給得像不用錢一樣，挑食者慎入。",
+      "date": "2025-12-20",
+      "status": "approved"
+    },
+    {
+      "id": 7,
+      "userId": 3,
+      "dishId": 34,
+      "type": "review",
+      "foundMines": [],
+      "comment": "這家滷肉飯是偏甜的口味，南部人會喜歡。",
+      "date": "2025-12-21",
+      "status": "approved"
+    },
+    {
+      "id": 8,
+      "userId": 1,
+      "dishId": 36,
+      "type": "report",
+      "foundMines": ["芹菜"],
+      "comment": "除了香菜還有加芹菜，味道很重。",
+      "date": "2025-12-22",
+      "status": "approved"
+    },
+    {
+      "id": 9,
+      "userId": 2,
+      "dishId": 6,
+      "type": "review",
+      "foundMines": [],
+      "comment": "可樂餅是純素的！好吃推薦。",
+      "date": "2025-12-23",
+      "status": "approved"
+    },
+    {
+      "id": 10,
+      "userId": 1,
+      "dishId": 23,
+      "type": "review",
+      "foundMines": ["香菜"],
+      "comment": "泰式料理真的很難避開香菜...",
+      "date": "2025-12-24",
+      "status": "approved"
+    },
+    {
+      "id": 11,
+      "userId": 3,
+      "dishId": 15,
+      "type": "review",
+      "foundMines": ["花生醬"],
+      "comment": "花生醬很濃郁，但會過敏的人要小心。",
+      "date": "2025-12-25",
+      "status": "approved"
+    },
+    {
+      "id": 12,
+      "userId": 2,
+      "dishId": 18,
+      "type": "review",
+      "foundMines": [],
+      "comment": "可以請店員不要加肉，變成素食拌飯，很友善！",
+      "date": "2025-12-26",
+      "status": "approved"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "為何會有人天生討厭香菜？基因告訴你",
+      "category": "挑食專欄",
+      "date": "2025-12-01",
+      "image": "news_cilantro.jpg",
+      "summary": "科學家發現 OR6A2 基因讓我們對醛類分子特別敏感..."
+    },
+    {
+      "id": 2,
+      "title": "系統維護公告：伺服器升級作業",
+      "category": "系統公告",
+      "date": "2025-11-11",
+      "image": "news_server.jpg",
+      "summary": "為了提供更穩定的服務，Spoonful 將於本週末進行維護..."
+    },
+    {
+      "id": 3,
+      "title": "踩地雷大隊長招募中！",
+      "category": "活動快訊",
+      "date": "2025-11-01",
+      "image": "news_recruitment.jpg",
+      "summary": "分享你發現的隱藏地雷，累積點數換好禮！"
+    },
+    {
+      "id": 4,
+      "title": "2025 年度最受歡迎的無蔥餐廳 Top 10",
+      "category": "精選榜單",
+      "date": "2025-12-28",
+      "image": "news_top10.jpg",
+      "summary": "經過網友票選，這十家餐廳對挑食者最友善..."
+    },
+    {
+      "id": 5,
+      "title": "新功能上線：自訂你的挑食黑名單",
+      "category": "系統公告",
+      "date": "2025-12-15",
+      "image": "news_feature.jpg",
+      "summary": "現在您可以更精細地設定不吃的食材，從此跟地雷說拜拜。"
+    },
+    {
+      "id": 6,
+      "title": "義大利人震怒！披薩到底該不該加鳳梨？",
+      "category": "趣味話題",
+      "date": "2025-12-20",
+      "image": "news_pizza.jpg",
+      "summary": "這個爭論已經持續了幾十年，來看看雙方陣營怎麼說。"
+    }
+  ]
+}
