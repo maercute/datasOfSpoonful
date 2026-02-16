@@ -24,6 +24,7 @@ if (!fs.existsSync(dbPath)) {
         dishes: [],
         reviews: [],
         collections: [],
+        reports: [],
       },
       null,
       2,
@@ -41,9 +42,10 @@ server.use(jsonServer.defaults());
 const rules = auth.rewriter({
   users: 600,
   restaurants: 444,
-  dishes: 444,
+  dishes: 644,
   reviews: 644,
   collections: 600,
+  reports: 600,
 });
 
 server.use(rules);
