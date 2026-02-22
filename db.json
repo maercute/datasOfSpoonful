@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "芫荽殺手",
-      "email": "admin@example.com",
+      "email": "admin@gmail.com",
       "password": "$2a$10$Ixgye.5L2pFeqPL6YtQuTOT8DXtTbgFlGOk/t8V3lMyS3BZcQ2V4C",
       "avatar": "https://raw.githubusercontent.com/qwe30108/D10-Spoonful/assets/add-webp-images/src/assets/images/user.png",
       "role": "admin"
@@ -30,7 +30,7 @@
       "id": 4
     },
     {
-      "email": "abc123@test.com",
+      "email": "abc123@gmail.com",
       "password": "$2a$10$Ixgye.5L2pFeqPL6YtQuTOT8DXtTbgFlGOk/t8V3lMyS3BZcQ2V4C",
       "name": "tester",
       "avatar": "https://raw.githubusercontent.com/qwe30108/D10-Spoonful/assets/add-webp-images/src/assets/images/user.png",
@@ -251,7 +251,7 @@
       "restaurantId": 1,
       "title": "清燉牛肉麵",
       "images": [
-        "https://github.com/qwe30108/D10-Spoonful/blob/assets/add-webp-images/src/assets/images/webp-images/pick-up-noodles-near.WEBP"
+        "https://raw.githubusercontent.com/qwe30108/D10-Spoonful/assets/add-webp-images/src/assets/images/webp-images/pick-up-noodles-near.WEBP"
       ],
       "tags": ["紅蘿蔔", "洋蔥", "蔥", "番茄"],
       "status": "published",

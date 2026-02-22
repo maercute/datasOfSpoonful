@@ -4,8 +4,38 @@ const path = require("path");
 const fs = require("fs");
 
 const server = jsonServer.create();
-const router = jsonServer.router(path.join(__dirname, "db.json"));
+//const router = jsonServer.router(path.join(__dirname, "db.json"));
 const middlewares = jsonServer.defaults();
+
+const isProd = process.env.NODE_ENV === "production";
+const dbDirectory = isProd ? "/data" : __dirname;
+const dbPath = path.join(dbDirectory, "db.json");
+
+if (!fs.existsSync(dbDirectory)) {
+  fs.mkdirSync(dbDirectory, { recursive: true });
+}
+
+if (!fs.existsSync(dbPath)) {
+  console.log("初始化資料庫 db.json ...");
+  fs.writeFileSync(
+    dbPath,
+    JSON.stringify(
+      {
+        users: [],
+        restaurants: [],
+        dishes: [],
+        reviews: [],
+        collections: [],
+        reports: [],
+      },
+      null,
+      2,
+    ),
+  );
+}
+
+// 確保 Router 指向正確的路徑！
+const router = jsonServer.router(dbPath);
 
 // 1. 基本設定
 server.db = router.db;
